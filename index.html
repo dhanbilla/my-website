@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      margin:0 ;
+      font-family: inter;
+      background-color: #000;
+      color: #fff;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .profile-card{
+      background-color: #1a1a1a;
+      padding:20px;
+      border-radius: 12px;
+      text-align: center;
+      width: 300px;
+    }
+    .profile-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .profile-card h2 {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    .profile-card p {
+      color: hsl(75, 94%, 57%);
+      margin: 5px 0;
+    }
+
+    .profile-card span {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button-container button {
+      padding: 10px;
+      background-color: #333;
+      color: hsl(0, 0%, 100%);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    
+    }
+
+    .button-container button:hover {
+      background-color: hsl(75, 94%, 57%);
+      color:#000;
+    }
+
+    .button-container button.active {
+      background-color: hsl(0, 0%, 100%);
+      color: #000;
+    }
+    /* Responsive styles for mobile */
+    @media (max-width: 375px) {
+      .profile-card {
+        width: 90%;
+        padding: 20px;
+      }
+      .button-container button {
+        width: 100%;
+
+      }
+    }
+   </style>
+
+   <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <div class="profile-card">
+  <img src="assets/images/avatar-jessica.jpeg" alt="Profile Picture">
+  <h2>Jessica Randall</h2>
+  <p>London, United Kingdom</p>
+  <span>"Front-end developer and avid reader."</span>
+
+  <div class="button-container">
+    <button>GitHub</button> 
+  <button>Frontend Mentor</button>
+  <button>LinkedIn</button>
+  <button>Twitter</button>
+  <button>Instagram</button>
+  </div><br><br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+     
+    Coded by <a href="https://www.linkedin.com/in/daniel-adisa-8b5828239?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5PW5%2Fa8AQtWt2ggdzG1pZA%3D%3D">Adisa Daniel</a>.
+  </div>
+ </div>
+</body>
+</html>
